@@ -1,0 +1,15 @@
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Book book1=new Book("Poem","Gutoe","123456789");
+        Book book2=new Book("Poem2","Gutoe","123456789444");
+
+        Book[] books={book1,book2};
+        Library library=new Library(books);
+
+        System.out.println(library);
+        System.out.println(library.getBooks()[0]);
+    }
+}
